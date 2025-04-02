@@ -3692,7 +3692,7 @@ where
 
 
         let url = params.parse_with_url(&url);
-
+        println!(url)
 
 
         loop {
@@ -3718,6 +3718,7 @@ where
 
                 if let Some(token) = token.as_ref() {
                     req_builder = req_builder.header(AUTHORIZATION, format!("Bearer {}", token));
+                    println!("token: {}", token);
                 }
 
 
