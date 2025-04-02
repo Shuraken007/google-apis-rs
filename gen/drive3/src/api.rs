@@ -3692,7 +3692,7 @@ where
 
 
         let url = params.parse_with_url(&url);
-        println!(url)
+        println!(url);
 
 
         loop {
